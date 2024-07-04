@@ -33,9 +33,7 @@ body{
 .box{
     
     z-index: 1 !important;
-    /* filter: blur(0px) !important; */
-    background-color:rgb(226, 187, 233);
-    border: 1rem solid rgba(90, 99, 156,0.3);
+    box-shadow: inset 0px 0px 1rem 1rem rgba(226, 187, 233,0.3);
     width:80%;
     height: 50%;
     display: flex; 
@@ -44,6 +42,7 @@ body{
     justify-content: space-between;
     align-content: center;
     border-radius: 2rem;
+    background-color:rgb(226, 187, 233);
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
 }
 .quote{
@@ -63,7 +62,7 @@ body{
 .button{
     
     /* position: relative; */
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     height:10%;
     display: flex;
     /* align-items: center; */
