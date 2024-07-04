@@ -2,10 +2,20 @@ body{
     background-color: #000;
 }
 
-.container{
-    z-index: -1;
+.background{
+    filter:blur(10px);
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
     background-color:rgb(155, 134, 189);
-    filter:blur(1px);
+    height: 100vh;
+    width:100vw;
+}
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width:100vw;
     display: flex;
@@ -15,23 +25,31 @@ body{
 
 
 .box{
-    z-index: 3;
-    filter: blur(0);
+    
+    z-index: 1 !important;
+    /* filter: blur(0px) !important; */
     background-color:rgb(226, 187, 233);
     border: 1px solid black;
-    width:50%;
+    width:80%;
     height: 50%;
     display: flex; 
     flex-wrap: wrap ;
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
+    border-radius: 2rem;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
 }
 .quote{
-    height:50%;
+    height:60%;
     /* width:50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .box button{
     position: relative;
-    margin-bottom: 0px;
-    height:10%
+    margin-bottom: 1rem;
+    height:10%;
+    width:50%;
 }
