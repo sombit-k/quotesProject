@@ -29,7 +29,7 @@ body{
     z-index: 1 !important;
     /* filter: blur(0px) !important; */
     background-color:rgb(226, 187, 233);
-    border: 1px solid black;
+    border: 1rem solid rgba(90, 99, 156,0.3);
     width:80%;
     height: 50%;
     display: flex; 
