@@ -2,10 +2,26 @@ body{
     background-color: #000;
 }
 
-.container{
-    z-index: -1;
+.oxygen-regular {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.background{
+    filter:blur(10px);
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
     background-color:rgb(155, 134, 189);
-    filter:blur(1px);
+    height: 100vh;
+    width:100vw;
+}
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width:100vw;
     display: flex;
@@ -15,23 +31,48 @@ body{
 
 
 .box{
-    z-index: 3;
-    filter: blur(0);
-    background-color:rgb(226, 187, 233);
-    border: 1px solid black;
-    width:50%;
+    
+    z-index: 1 !important;
+    box-shadow: inset 0px 0px 1rem 1rem rgba(226, 187, 233,0.3);
+    width:80%;
     height: 50%;
     display: flex; 
     flex-wrap: wrap ;
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
+    border-radius: 2rem;
+    background-color:rgb(226, 187, 233);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
 }
 .quote{
-    height:50%;
+    font-size: 1.5rem;
+    margin: 1rem;
+    height:60%;
     /* width:50%; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-.box button{
-    position: relative;
-    margin-bottom: 0px;
-    height:10%
+.author{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
 }
+.button{
+    
+    /* position: relative; */
+    margin-bottom: 2rem;
+    height:10%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.button button{
+    color:rgb(31, 30, 32);
+    border-radius: 1rem;
+    scale:1.5;
+    background-color: rgba(119, 118, 179,0.4);
+}
+
