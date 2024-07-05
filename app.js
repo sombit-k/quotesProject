@@ -614,8 +614,8 @@ let getQuotes =() =>{
     let {q:quote,a:author} =qList[i];
     console.log(quote,author);
     let quotePara = document.querySelector(".quote p")
-    quotePara.innerText=quote;
+    quotePara.innerText=`"${quote}"`;
     let quoteAuthor = document.querySelector(".author p")
-    quoteAuthor.innerText=author;
+    quoteAuthor.innerText='~ '+author;
 }
 
