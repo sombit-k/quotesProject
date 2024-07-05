@@ -35,7 +35,7 @@ body{
     z-index: 1 !important;
     box-shadow: inset 0px 0px 1rem 1rem rgba(226, 187, 233,0.3);
     width:80%;
-    height: 50%;
+    height: 60%;
     display: flex; 
     flex-wrap: wrap ;
     flex-direction: column;
